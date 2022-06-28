@@ -6,7 +6,7 @@ using System.Text;
 Console.WriteLine("Mesaj Dinleniyor");
 
 var factory = new ConnectionFactory();      //Factory Design Pattern kullanırız.
-factory.Uri = new Uri("amqps://dxmtamsk:QTRueb-UJ67m5bfhAaAKHNs-joh1bTzd@moose.rmq.cloudamqp.com/dxmtamsk ");   //RabbitMq bağlantı linki.
+factory.Uri = new Uri("amqps://dxmtamsk:...@moose.rmq.cloudamqp.com/dxmtamsk ");   //RabbitMq bağlantı linki.
 using var connection = factory.CreateConnection();      //Bağlantı oluşturduk.
 
 var channel = connection.CreateModel();     //haberleşme yapımızı kurduk
